@@ -1,0 +1,24 @@
+ts_iso,custom_header,qname,answers,source,ok
+2025-09-14T23:42:08+05:30,23420800,apple.com.,192.168.1.11,custom_header_night,True
+2025-09-14T23:42:08+05:30,23420801,_apple-mobdev._tcp.local.,192.168.1.12,custom_header_night,True
+2025-09-14T23:42:08+05:30,23420802,_apple-mobdev._tcp.local.,192.168.1.13,custom_header_night,True
+2025-09-14T23:42:08+05:30,23420803,facebook.com.,192.168.1.14,custom_header_night,True
+2025-09-14T23:42:08+05:30,23420804,Brother MFC-7860DW._pdl-datastream._tcp.local.,192.168.1.15,custom_header_night,True
+2025-09-14T23:42:08+05:30,23420805,Brother MFC-7860DW._pdl-datastream._tcp.local.,192.168.1.11,custom_header_night,True
+2025-09-14T23:42:09+05:30,23420906,Brother MFC-7860DW._pdl-datastream._tcp.local.,192.168.1.12,custom_header_night,True
+2025-09-14T23:42:09+05:30,23420907,Brother MFC-7860DW._pdl-datastream._tcp.local.,192.168.1.13,custom_header_night,True
+2025-09-14T23:42:09+05:30,23420908,amazon.com.,192.168.1.14,custom_header_night,True
+2025-09-14T23:42:10+05:30,23421009,_apple-mobdev._tcp.local.,192.168.1.15,custom_header_night,True
+2025-09-14T23:42:10+05:30,23421010,Brother MFC-7860DW._pdl-datastream._tcp.local.,192.168.1.11,custom_header_night,True
+2025-09-14T23:42:10+05:30,23421011,Brother MFC-7860DW._pdl-datastream._tcp.local.,192.168.1.12,custom_header_night,True
+2025-09-14T23:42:10+05:30,23421012,twitter.com.,192.168.1.13,custom_header_night,True
+2025-09-14T23:42:11+05:30,23421113,Brother MFC-7860DW._pdl-datastream._tcp.local.,192.168.1.14,custom_header_night,True
+2025-09-14T23:42:11+05:30,23421114,Brother MFC-7860DW._pdl-datastream._tcp.local.,192.168.1.15,custom_header_night,True
+2025-09-14T23:42:11+05:30,23421115,_apple-mobdev._tcp.local.,192.168.1.11,custom_header_night,True
+2025-09-14T23:42:11+05:30,23421116,_apple-mobdev._tcp.local.,192.168.1.12,custom_header_night,True
+2025-09-14T23:42:11+05:30,23421117,wikipedia.org.,192.168.1.13,custom_header_night,True
+2025-09-14T23:42:13+05:30,23421318,Brother MFC-7860DW._pdl-datastream._tcp.local.,192.168.1.14,custom_header_night,True
+2025-09-14T23:42:13+05:30,23421319,Brother MFC-7860DW._pdl-datastream._tcp.local.,192.168.1.15,custom_header_night,True
+2025-09-14T23:42:13+05:30,23421320,Brother MFC-7860DW._pdl-datastream._tcp.local.,192.168.1.11,custom_header_night,True
+2025-09-14T23:42:13+05:30,23421321,Brother MFC-7860DW._pdl-datastream._tcp.local.,192.168.1.12,custom_header_night,True
+2025-09-14T23:42:13+05:30,23421322,stackoverflow.com.,192.168.1.13,custom_header_night,True
