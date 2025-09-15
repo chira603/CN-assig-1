@@ -1,4 +1,4 @@
-# CS331 Task‑1 – DNS Resolver (Overview)
+# CS331 Task‑1 – DNS Resolver 
 
 This assignment implements a minimal DNS resolver system composed of a UDP server and a client. The client extracts DNS queries from a PCAP file, prefixes each query with a custom 8‑byte header (HHMMSSID), and sends it to the server over UDP. The server parses the header and DNS query, resolves an IP address based on configurable rules (or a deterministic header‑based algorithm), returns a JSON response to the client, and writes structured CSV logs.
 
