@@ -13,6 +13,8 @@ import json
 import socket
 import sys
 import time
+from datetime import datetime
+from typing import List, Tuple
 import re
 import os
 
@@ -178,7 +180,7 @@ def main():
 
     if not os.path.exists(args.log):
         with open(args.log, "w", encoding="utf-8") as f:
-            f.write("Custom header value (HHMMSSID),Domain name,Resolved IP address\n")
+            f.write("ts_iso,client_ip,header,qname,qtype,answers,source\n")
 
     while True:
         try:
@@ -189,6 +191,7 @@ def main():
             print("\n[+] Server stopping.")
             break
 
+        ts = datetime.now().isoformat(timespec="seconds")
         if len(data) < 8:
             print(f"[-] Dropping short packet from {addr}")
             continue
@@ -214,11 +217,8 @@ def main():
         resp = {"ok": True, "header": header_txt, "qname": qname, "qtype": qtype, "answers": answers, "source": source}
         sock.sendto(header + json.dumps(resp).encode("utf-8"), addr)
 
-        # Log in the required format: Custom header value (HHMMSSID), Domain name, Resolved IP address
-        qname_clean = (qname or "").rstrip(".")
-        resolved_ip = answers[0] if answers else ""
         with open(args.log, "a", encoding="utf-8") as f:
-            f.write(f"{header_txt},{qname_clean},{resolved_ip}\n")
+            f.write(f"{ts},{addr[0]},{header_txt},{qname},{qtype},\"{';'.join(answers)}\",{source}\n")
 
 if __name__ == "__main__":
     main()
